@@ -1,0 +1,30 @@
+INFO [02-28|22:07:19.690] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [02-28|22:07:19.691] Starting peer-to-peer node               instance=Geth/v1.9.11-stable/darwin-amd64/go1.13.8
+INFO [02-28|22:07:19.692] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [02-28|22:07:19.692] Allocated cache and file handles         database=/Users/shiwei/working/dcat-blockchain/pnet/node0069/geth/chaindata cache=512.00MiB handles=5120
+INFO [02-28|22:07:19.727] Opened ancient database                  database=/Users/shiwei/working/dcat-blockchain/pnet/node0069/geth/chaindata/ancient
+INFO [02-28|22:07:19.727] Initialised chain configuration          config="{ChainID: 7420 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: <nil>, Engine: clique}"
+INFO [02-28|22:07:19.727] Initialising Ethereum protocol           versions="[65 64 63]" network=7420 dbversion=7
+INFO [02-28|22:07:19.728] Loaded most recent local header          number=708 hash=450a93…949ea2 td=1417 age=1m13s
+INFO [02-28|22:07:19.728] Loaded most recent local full block      number=708 hash=450a93…949ea2 td=1417 age=1m13s
+INFO [02-28|22:07:19.728] Loaded most recent local fast block      number=708 hash=450a93…949ea2 td=1417 age=1m13s
+INFO [02-28|22:07:19.851] Loaded local transaction journal         transactions=0 dropped=0
+INFO [02-28|22:07:19.852] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [02-28|22:07:19.852] Switch sync mode from fast sync to full sync 
+INFO [02-28|22:07:19.889] New local node record                    seq=6 id=8690422740ee2132 ip=127.0.0.1 udp=0 tcp=3020
+INFO [02-28|22:07:19.889] Started P2P networking                   self="enode://752d1d13efbd296c705423841a90b4496cb024fdcc28befc0bc030db6ac926bab2782bf7f7ccceeaa61b1c7450d467fe25ecd3c788b5263ed32fb3a05eb0d4f0@127.0.0.1:3020?discport=0"
+INFO [02-28|22:07:19.890] IPC endpoint opened                      url=/Users/shiwei/working/dcat-blockchain/pnet/node0069/geth.ipc
+INFO [02-28|22:07:19.890] HTTP endpoint opened                     url=http://127.0.0.1:7420 cors=* vhosts=localhost
+INFO [02-28|22:07:19.932] Etherbase automatically configured       address=0x6091468522E41505DF9064337168eCB552452adD
+INFO [02-28|22:07:24.034] HTTP endpoint closed                     url=http://127.0.0.1:7420
+INFO [02-28|22:07:24.034] IPC endpoint closed                      url=/Users/shiwei/working/dcat-blockchain/pnet/node0069/geth.ipc
+INFO [02-28|22:07:24.035] Writing cached state to disk             block=708 hash=450a93…949ea2 root=246d51…462c65
+INFO [02-28|22:07:24.035] Persisted trie from memory database      nodes=0 size=0.00B time=5.741µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [02-28|22:07:24.035] Writing cached state to disk             block=707 hash=84e094…58d4fc root=246d51…462c65
+INFO [02-28|22:07:24.035] Persisted trie from memory database      nodes=0 size=0.00B time=1.577µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [02-28|22:07:24.035] Writing cached state to disk             block=581 hash=c8806c…0431d3 root=246d51…462c65
+INFO [02-28|22:07:24.035] Persisted trie from memory database      nodes=0 size=0.00B time=1.082µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [02-28|22:07:24.035] Blockchain manager stopped 
+INFO [02-28|22:07:24.035] Stopping Ethereum protocol 
+INFO [02-28|22:07:24.035] Ethereum protocol stopped 
+INFO [02-28|22:07:24.035] Transaction pool stopped 

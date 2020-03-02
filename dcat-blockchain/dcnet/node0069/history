@@ -1,0 +1,4 @@
+eth.accounts
+eth.getBalance(eth.coinbase)
+miner.start()
+eth.blockNumber
