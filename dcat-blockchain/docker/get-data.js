@@ -14,7 +14,7 @@ test();
 //contract.options.address = "0x9696A8094782E1214c8DddBD1670ca0b8A803dE5";
 
 async function test() {
-    web3 = new Web3("http://localhost:8542");
+    web3 = new Web3("http://localhost:7420");
 
     // Load account
     const accounts = await web3.eth.getAccounts();
