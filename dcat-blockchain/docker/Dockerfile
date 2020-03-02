@@ -18,7 +18,7 @@ COPY get-data.js /dcnet/node1
 RUN cd /dcnet/node1 && npm -y install web3
 RUN chown 755 /dcnet/node1/geth-init.sh
 RUN geth --nousb --datadir /dcnet/node1/ init /dcnet/dcnet.json
-ENTRYPOINT nohup geth --nousb --port 3012 --networkid 7410 --datadir=/dcnet/node1 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --ipcpath=geth.ipc --allow-insecure-unlock --ipcpath=/dcnet/node1/geth.ipc
+ENTRYPOINT nohup geth --nousb --port 3020 --networkid 5811 --datadir=/dcnet/node1 --maxpeers=5  --rpc --rpcport 7420 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --ipcpath=geth.ipc --allow-insecure-unlock --ipcpath=/dcnet/node1/geth.ipc
 
 
 #cd /dcnet/node1
