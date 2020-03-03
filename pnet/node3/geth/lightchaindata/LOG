@@ -1,0 +1,76 @@
+=============== Feb 14, 2020 (EST) ===============
+20:55:51.965621 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:55:51.994935 db@open opening
+20:55:51.995847 version@stat F·[] S·0B[] Sc·[]
+20:55:52.009268 db@janitor F·2 G·0
+20:55:52.012030 db@open done T·17.008571ms
+20:55:52.018840 db@close closing
+20:55:52.018991 db@close done T·149.229µs
+=============== Feb 16, 2020 (EST) ===============
+00:16:45.074681 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:16:45.090466 version@stat F·[] S·0B[] Sc·[]
+00:16:45.090542 db@open opening
+00:16:45.090637 journal@recovery F·1
+00:16:45.092028 journal@recovery recovering @1
+00:16:45.132597 memdb@flush created L0@2 N·622 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xff\xf3\xba..~.\xb5,v398"
+00:16:45.135101 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+00:16:45.182200 db@janitor F·3 G·0
+00:16:45.182240 db@open done T·91.67953ms
+00:16:45.189708 db@close closing
+00:16:45.190015 db@close done T·306.124µs
+=============== Feb 16, 2020 (EST) ===============
+21:25:24.899423 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:25:24.912958 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+21:25:24.913021 db@open opening
+21:25:24.913186 journal@recovery F·1
+21:25:24.917715 journal@recovery recovering @3
+21:25:24.933151 memdb@flush created L0@5 N·1 S·387B "eth..*K\xa6,v624":"eth..*K\xa6,v624"
+21:25:24.934939 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+21:25:24.989289 db@janitor F·4 G·0
+21:25:24.989323 db@open done T·76.287963ms
+21:25:25.012428 db@close closing
+21:25:25.012715 db@close done T·285.048µs
+=============== Feb 17, 2020 (EST) ===============
+09:46:12.183863 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:46:12.193714 version@stat F·[2] S·50KiB[50KiB] Sc·[0.50]
+09:46:12.193778 db@open opening
+09:46:12.193892 journal@recovery F·1
+09:46:12.194385 journal@recovery recovering @6
+09:46:12.214518 memdb@flush created L0@8 N·1 S·387B "eth..*K\xa6,v626":"eth..*K\xa6,v626"
+09:46:12.218803 version@stat F·[3] S·51KiB[51KiB] Sc·[0.75]
+09:46:12.262771 db@janitor F·5 G·0
+09:46:12.262829 db@open done T·69.033522ms
+09:46:12.294806 db@close closing
+09:46:12.295100 db@close done T·287.818µs
+=============== Feb 20, 2020 (EST) ===============
+21:58:08.398113 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:58:08.435801 version@stat F·[3] S·51KiB[51KiB] Sc·[0.75]
+21:58:08.435896 db@open opening
+21:58:08.436033 journal@recovery F·1
+21:58:08.436924 journal@recovery recovering @9
+21:58:08.449098 memdb@flush created L0@11 N·1 S·387B "eth..*K\xa6,v628":"eth..*K\xa6,v628"
+21:58:08.451782 version@stat F·[4] S·51KiB[51KiB] Sc·[1.00]
+21:58:08.498452 db@janitor F·6 G·0
+21:58:08.498509 db@open done T·62.585465ms
+21:58:08.498584 table@compaction L0·4 -> L1·0 S·51KiB Q·629
+21:58:08.526170 db@close closing
+21:58:08.545312 table@build created L1@14 N·622 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xff\xf3\xba..~.\xb5,v398"
+21:58:08.547490 table@build exiting
+21:58:08.547518 table@build revert @14
+21:58:08.548528 db@close done T·22.352997ms
+=============== Feb 29, 2020 (EST) ===============
+16:55:25.157886 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:55:25.158702 version@stat F·[4] S·51KiB[51KiB] Sc·[1.00]
+16:55:25.158748 db@open opening
+16:55:25.158876 journal@recovery F·1
+16:55:25.161506 journal@recovery recovering @12
+16:55:25.189612 memdb@flush created L0@14 N·1 S·387B "eth..*K\xa6,v630":"eth..*K\xa6,v630"
+16:55:25.192502 version@stat F·[5] S·51KiB[51KiB] Sc·[1.25]
+16:55:25.323017 db@janitor F·7 G·0
+16:55:25.323065 db@open done T·164.30279ms
+16:55:25.323126 table@compaction L0·5 -> L1·0 S·51KiB Q·631
+16:55:25.330820 db@close closing
+16:55:25.333378 table@build created L1@17 N·622 S·50KiB "\x02d\xfc..\x19Ba,v430":"\xff\xf3\xba..~.\xb5,v398"
+16:55:25.333423 table@build exiting
+16:55:25.333624 table@build revert @17
+16:55:25.333967 db@close done T·3.143173ms

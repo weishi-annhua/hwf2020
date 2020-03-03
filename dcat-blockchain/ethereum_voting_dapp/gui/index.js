@@ -1,6 +1,6 @@
 //const fetch = require('node-fetch');
 
-web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7420"))
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8542"))
 var account;
 web3.eth.getAccounts().then((f) => {
  account = f[0];
@@ -9,11 +9,11 @@ web3.eth.getAccounts().then((f) => {
 abi = JSON.parse('[{"constant":true,"inputs":[{"name":"candidate","type":"bytes32"}],"name":"totalVotesFor","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"candidate","type":"bytes32"}],"name":"validCandidate","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"bytes32"}],"name":"votesReceived","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"candidateList","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"candidate","type":"bytes32"}],"name":"voteForCandidate","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"candidateNames","type":"bytes32[]"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]')
 
 contract = new web3.eth.Contract(abi);
-contract.options.address = "0x3db812B185eD8957adD51a16e3E6E2E1e7665626";
+contract.options.address = "0x6e29b59ECb5b7A4248F394D3779c1eb35DEaCBE0";
 
 // update this contract address with your contract address
 
-candidates = {"Biden": "candidate-1", "Bloomberg": "candidate-2", "Klobuchar": "candidate-3","Sanders": "candidate-4","Warren": "candidate-5",}
+candidates = {"Rama": "candidate-1", "Nick": "candidate-2", "Jose": "candidate-3"}
 
 function voteForCandidate(candidate) {
  candidateName = $("#candidate").val();

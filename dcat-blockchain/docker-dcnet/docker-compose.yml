@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  dkr:
+    image: docker
+    privileged: true
+    working_dir: "/dkr"
+    volumes:
+      - ".:/dkr"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    command: docker exec ethereum-voting_poqianggo_1 /bin/bash /pnet/node1/geth-init.sh
+  poqianggo:
+    image: poqianggo/posts:latest
+    #command: /pnet/node1/geth-init.sh
+    volumes:
+      - .:/code
+    stdin_open: true
+    tty: true
+
+# Run following command and get the result file
+# docker-compose up -d
+# docker exec -ti ethereum-voting_poqianggo_1 /bin/bash
+# $/pnet/node1/geth-init.sh
+# cat postContents.txt

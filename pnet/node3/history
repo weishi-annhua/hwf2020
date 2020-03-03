@@ -1,0 +1,151 @@
+miner.start()
+eth.blockNumber
+miner.stop()
+admin.nodeInfo
+eth.coinbase
+eth.getBalance(eth.coinbase)
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f30')
+admin.peers
+eth.getBalance(eth.coinbase)
+eth.accounts
+admin.peers
+admin.nodeInfo
+admin.peers
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010')
+admin.peers
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.blockNumber
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.accounts[0]
+eth.blockNumber
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.blockNumber
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.blockNumber
+admin.peers
+eth.coinbase
+eth.getBalance(eth.coinbase)
+eth.blockNumber
+admin.peers
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+> admin.peers
+admin.peers
+admin.addPeer('enode://326fcf97a964a3e048f563131d8fca2218d02981f7ce5b7f25bc1bae1df9b27540b22881c43999e9a11d6863dabb803c3a6895a83c
+e9015373c1ba827a951a62@34.70.180.193:3012');
+admin.addPeer('enode://326fcf97a964a3e048f563131d8fca2218d02981f7ce5b7f25bc1bae1df9b27540b22881c43999e9a11d6863dabb803c3a6895a83ce9015373c1ba827a951a62@34.70.180.193:3012')
+admin.peers
+eth.coinbase
+eth.blockNumber
+admin.peers
+eth.coinbase
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.blockNumber
+admin.nodeInfo.enode
+eth.blockNumber
+>admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+> admin.peers
+Test Voting dapp
+Test Social Media dapp
+truffle migrate --reset --compile-all --network pnet
+Node 4 (Lenovo)
+Node 5 (WSCCI000)
+geth --nousb --datadir node5 init pnet.json
+geth --nousb --port 8888 --networkid 7410 --datadir=./node5 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+"0x943b1630d5d2a30704795fa92a40f061aba3d216"
+>admin.addPeer('enode://326fcf97a964a3e048f563131d8fca2218d02981f7ce5b7f25bc1bae1df9b27540b22881c43999e9a11d6863dabb803c3a6895a83ce9015373c1ba827a951a62@34.70.180.193:3012')
+> web3.eth.sendTransaction({from:eth.coinbase,to:'0x943b1630D5d2a30704795FA92A40F061Aba3d216',value:web3.toWei(300,"ether")})
+web3.eth.sendTransaction({from:eth.coinbase,to:'0x943b1630D5d2a30704795FA92A40F061Aba3d216',value:web3.toWei(300,"ether")})
+Test Voting dapp
+Test Social Media dapp
+truffle migrate --reset --compile-all --network pnet
+Part 2
+web3 = require('web3')
+sudo apt-get install gcc g++ make
+231 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+232 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+233 sudo apt-get install nodejs
+234 node -v
+235 npm install web3
+236 sudo npm install web3
+237 apt install npm
+238 sudo apt install npm
+239 npm install web3
+240 node
+241 git
+242 pwd
+243 ls
+244 mkdir github
+245 cd github
+246 git clone https://github.com/mjhm/hello_world_dapp.git
+247 ls
+248 pwd
+249 ls
+250 cd hello_world_dapp/
+251 ls
+252 npm install
+253 npm install solc@0.5.3
+254 ls
+255 node_modules/.bin/solcjs --bin --abi Voting.sol
+256 ls
+257 node_modules/.bin/solcjs --bin --abi voting.sol
+258 npm install solc@0.5.3
+259 npm install -g solc@0.5.3
+260 sudo npm install -g solc@0.5.3
+``
+deployedContract.deploy({
+  data: bytecode,
+  arguments: [listOfCandidates.map(name => web3.utils.asciiToHex(name))]
+}).send({
+  from: '0xB42E85720FeFBfde6AdE50589f37005d5DfdD74A',
+  gas: 1500000,
+  gasPrice: web3.utils.toWei('0.00003', 'ether')
+}).then((newContractInstance) => {
+  deployedContract.options.address = newContractInstance.options.address
+  console.log(newContractInstance.options.address)
+}).catch(err => console.log(err));
+fetch('https://no-such-server.blabla') // rejects
+``
+@weishi-annhua weishi-annhua changed the title Private Blockchain Setup on gcloud Private Blockchain Setup on gcloud (Part 1) 4 days ago
+@weishi-annhua
+Attach files by dragging & dropping, selecting or pasting them.
+Remember, contributions to this repository should follow our GitHub Community Guidelines.
+Assignees
+No one—
+Labels
+None yet
+Projects
+None yet
+Milestone
+No milestone
+Linked pull requests
+Successfully merging a pull request may close this issue.
+None yet
+Notifications
+Customize
+You’re receiving notifications because you’re watching this repository.
+1 participant
+@weishi-annhua
+Lock conversation
+Transfer issue
+Delete issue
+eth.coinbase
+eth.accounts[1]
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.accounts
+eth.blockNumber
+admin.peers
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e1
+3f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.addPeer('enode://96e522b26a2389e23b47bee2b1dd446a1c65630c96a58c9e48817ea7a4ae7a1fa4e5401411b365fc08eba214d119641140072576e13f3040c7e4c056ceb630a0@35.223.172.49:3010?discport=0')
+admin.peers
+eth.blockNumber
+eth.accounts
+eth.blockNumber

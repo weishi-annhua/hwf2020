@@ -1,0 +1,500 @@
+  158  docker rm $(docker ps -a)
+  159  docker rm $(docker ps -a -q)
+  160  pwd
+  161  docker ps
+  162  docker ps -a
+  163  docker-compose up -d
+  164  docker exec -ti compose-globus_web_globus_1 bash
+  165  ls
+  166  cd ~
+  167  cd repo/
+  168  ls
+  169  cd github
+  170  ls
+  171  cd shiwei/
+  172  ls
+  173  cd learning/
+  174  ls
+  175  cd internet/
+  176  ls
+  177  cd docker/
+  178  ls
+  179  cd compose-globus/
+  180  ls
+  181  cd shared_dir/
+  182  ls
+  183  touch aaa.txt
+  184  ls
+  185  pwd
+  186  ls
+  187  ls -al
+  188  touch bbb.txt
+  189  ls
+  190  ls -al
+  191  pwd
+  192  ls
+  193  rm aaa.txt
+  194  rm bbb.txt
+  195  pwd
+  196  ls
+  197  cd ..
+  198  ls
+  199  pwd
+  200  cd shared_dir/
+  201  ls
+  202  docker volume inspect
+  203  docker volume ls
+  204  docker volume inspect 8b24a73699089fbbb8e1f44190e5bd2b44ecfb88a384744ab8c67d2c86d4f929
+  205  docker system prune --volumes
+  206  ls
+  207  pwd
+  208  cd ..
+  209  ls
+  210  mkdir tx_dir
+  211  cd tx_dir
+  212  touch aaa.txt
+  213  ls
+  214  pwd
+  215  ls
+  216  docker volume ls
+  217  docker volume inspect 3ecd1f7e76d13af06ffe05ab152615ad005a2e12ecffa59f83f0ac740b81319b
+  218  pwd
+  219  ls
+  220  pwd
+  221  cd ~
+  222  cd working/
+  223  cd shared-folder/
+  224  ls
+  225  lsls
+  226  pwd
+  227  ls
+  228  exit
+  229  ls -al
+  230  ls .bash_profile
+  231  vi .bash_profile
+  232  source .bash_profile
+  233  exit
+  234  cd repo
+  235  ls
+  236  cd githu
+  237  cd github
+  238  ls
+  239  cd shiwei/
+  240  ls
+  241  cd learning/
+  242  ls
+  243  cd team
+  244  pwd
+  245  ls
+  246  git pull
+  247  cd javafx_archetype/
+  248  ls
+  249  git pull
+  250  ls
+  251  vi README.md 
+  252  cd ~
+  253  ls -al
+  254  vi .bashrc
+  255  ls .*
+  256  :
+  257  source .bashrc
+  258  pwd
+  259  ls *.*
+  260  vi .bash_profile
+  261  source .bash_profile
+  262  env
+  263  pwd
+  264  pwd
+  265  cd /Library/
+  266  ls
+  267  cd Java/
+  268  ls
+  269  cd JavaVirtualMachines/
+  270  ls
+  271  ls ~/Downloads/openjdk-14-ea+31_osx-x64_bin.tar.gz .
+  272  pwd
+  273  ls
+  274  cp ~/Downloads/openjdk-14-ea+31_osx-x64_bin.tar.gz .
+  275  sudo cp ~/Downloads/openjdk-14-ea+31_osx-x64_bin.tar.gz .
+  276  ls
+  277  tar -xvf openjdk-14-ea+31_osx-x64_bin.tar.gz 
+  278  ls
+  279  pwd
+  280  pwd
+  281  cd ~
+  282  vi .bash_profile
+  283  source .bash_profile
+  284  which java
+  285  java --version
+  286  pwd
+  287  vi .bash_profile
+  288  source .bash_profile
+  289  java --version
+  290  vi .bash_profile
+  291  source .bash_profile
+  292  java --version
+  293  pwd
+  294  cd ~
+  295  cd log
+  296  mkdir log
+  297  touch TestFX.log
+  298  ls
+  299  pwd
+  300  cd log
+  301  ls
+  302  docker system prune
+  303  docker ps
+  304  docker stop $(docker ps -a)
+  305  docker stop $(docker ps -q)
+  306  docker rm $(docker ps -q -a)
+  307  docker system prune --volumes
+  308  pwd
+  309  cd ~
+  310  cd repo/
+  311  ls
+  312  cd github
+  313  ls
+  314  cd shiwei/
+  315  ls
+  316  cd learning/
+  317  ls
+  318  cd internet/
+  319  ls
+  320  cd docker/
+  321  ls
+  322  cd compose-globus/
+  323  ls
+  324  vi docker-compose.yml
+  325  docker-compose up -d
+  326  docker exec -ti Creating compose-globus_web_globus_1 bash
+  327  docker exec -ti compose-globus_web_globus_1 bash
+  328  docker system prune
+  329  docker stop $(docker ps -q)
+  330  docker rm $(docker ps -q -a)
+  331  docker system prune --volumes
+  332  docker run -v ./shared_dir:/home/globus_user/code/shared_dir -ti weishimba/globus-docker:win bash
+  333  docker run -v ./shared_dir:/~/code/shared_dir -ti weishimba/globus-docker:win bash
+  334  pwd
+  335  ls
+  336  docker run -v ./shared_dir:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  337  ls
+  338  docker run -v .:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  339  docker run -v ./shared_dir:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  340  docker run -v ./shared_dir:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  341  docker run -v ./shared:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  342  docker
+  343  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/shared_dir:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  344  docker system prune 
+  345  docker system prune --volumes
+  346  ls
+  347  vi docker-compose.yml
+  348  docker-compose up -d
+  349  docker exec -ti compose-globus_web_globus_1 bash
+  350  docker ps
+  351  docker stop $(docker ps -q)
+  352  docker rm $(docker ps -q -a)
+  353  docker system prune --volume
+  354  docker system prune --volumes
+  355  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/home/globus/code/shared_dir -ti weishimba/globus-docker:win bash
+  356  docker ps
+  357  docker rm $(docker ps -a -q)
+  358  docker system prune --volumes
+  359  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/home/globus/code/tx_dir -ti weishimba/globus-docker:win bash
+  360  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/~/tx_dir -ti ubuntu:16.04 bash
+  361  pwd
+  362  cd ~
+  363  pwd
+  364  cd working/
+  365  mkdir shared-folder
+  366  pwd
+  367  ls
+  368  pwd
+  369  docker run -ti -v /Users/shiwei/working/shared-folder:/shared-folder ubuntu bash
+  370  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/tx_dir -ti ubuntu:16.04 bash
+  371  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/~/tx_dir -ti ubuntu:16.04 bash
+  372  docker run -v /Users/shiwei/repo/github/shiwei/learning/internet/docker/compose-globus/tx-dir:/tx_dir1 -ti ubuntu:16.04 bash
+  373  docker run -v ./shared_dir:/home/globus_user/code/shared_dir -ti weishimba/globus-docker:win bash
+  374  docker run -v /User/shiwei/working/shared-folder:/home/globus_user/code/shared-folder -ti weishimba/globus-docker:win bash
+  375  docker run -v /User/shiwei/working/shared-folder:/shared-folder -ti weishimba/globus-docker:win bash
+  376  ls /User/shiwei/intellij   :
+  377  docker run -v /Users/shiwei/working/shared-folder:/home/globus_user/code/shared-folder -ti weishimba/globus-docker:win bash
+  378  exit
+  379  java -version
+  380  cd ~
+  381  vi .bash_profile
+  382  source .bash_profile
+  383  java -version
+  384  vi .bash_profile
+  385  source .bash_profile
+  386  java -version
+  387  cd /
+  388  ls
+  389  cd Applications/
+  390  ls
+  391  ls ST*
+  392  ls STS.app/
+  393  ls STS.app/Contents/
+  394  ls STS.app/Contents/MacOS/
+  395  ls STS.app/Contents/MacOS/STS
+  396  ls
+  397  ls STS.app/Contents/MacOS/STS/STS.app
+  398  ls -al
+  399  ls ls .*
+  400  cd ~
+  401  vi .profile
+  402  ls -al
+  403  ls .bash_profile
+  404  ls .profile
+  405  vi .bash_profile
+  406  java -version
+  407  vi .bash_profile
+  408  source .bash_profile
+  409  java -version
+  410  cd /Applications/
+  411  cd STS.app/
+  412  ls
+  413  cd Contents/
+  414  ls
+  415  cd Eclipse/
+  416  ls
+  417  vi STS.ini 
+  418  pwd
+  419  cd ~
+  420  ls
+  421  cd wshi
+  422  ls
+  423  cd ethereum/
+  424  ls
+  425  mkdir my-eth-chain
+  426  cd my-eth-chain/
+  427  touch myGenesis.json
+  428  ls
+  429  vi myGenesis.json 
+  430  pwd
+  431  ls
+  432  geth --datadir ./myDataDir init ./myGenesis.json
+  433  cd ~
+  434  cd apps
+  435  ls
+  436  brew tap ethereum/ethereum
+  437  brew installl ethereum
+  438  brew install ethereum
+  439  geth --version
+  440  pwd
+  441  cd ..
+  442  cd wshi
+  443  ls
+  444  cd ethereum/
+  445  ls
+  446  cd my-eth-chain/
+  447  geth --datadir ./myDataDir init ./myGenesis.json
+  448  ls
+  449  vi myGenesis.json 
+  450  geth --datadir ./myDataDir init ./myGenesis.json
+  451  ls
+  452  vi myGenesis.json 
+  453  ls
+  454  rm -rf myDataDir/
+  455  geth --datadir ./myDataDir init ./myGenesis.json
+  456  ls
+  457  geth --datadir ./myDataDir --networkid 1114 console 2>> myEth.log
+  458  cd /Library/
+  459  ls
+  460  cd Java/
+  461  ls
+  462  cd JavaVirtualMachines/
+  463  ls
+  464  cd  jdk1.8.0_201.jdk/
+  465  ls
+  466  cd Contents/
+  467  ls
+  468  cd Home/
+  469  ls
+  470  cd bin
+  471  ls
+  472  pwd
+  473  pwd
+  474  cd /Applications/
+  475  cd STS.app/
+  476  ls
+  477  cd Contents/
+  478  ls
+  479  cd Eclipse/
+  480  ls
+  481  vi STS.ini 
+  482  pwd
+  483  vi STS.ini 
+  484  pwd
+  485  cd ~
+  486  cd wshi
+  487  pwd
+  488  ls
+  489  cd ethereum/
+  490  ls
+  491  cd myq
+  492  cd my-eth-chain/
+  493  ls
+  494  vi myGenesis.json 
+  495  pwd
+  496  ls
+  497  vi myGenesis.json 
+  498  ls
+  499  tail -f myEth.log 
+  500  cd wshi
+  501  cd ethereum/
+  502  ls
+  503  cd pnet
+  504  ls
+  505  cd ethereum_voting_dapp/
+  506  ls
+  507  ls
+  508  mkdir gui
+  509  cd gui
+  510  vi index.html
+  511  vi index.js
+  512  pwd
+  513  pwd
+  514  ls
+  515  vi index.js
+  516  vi index.js
+  517  ls
+  518  vi index.js
+  519  ps -ef | grep geth
+  520  pwd
+  521  ls
+  522  mv index.txtjs.js index.txtjs
+  523  ls
+  524  mv index.txtjs indexjs.txt
+  525  ls
+  526  solc
+  527  npm install solc
+  528  pwd
+  529  cd ~
+  530  cd repo
+  531  ls
+  532  cd github/
+  533  ls
+  534  cd shiwei/
+  535  ls
+  536  cd learning/
+  537  ls
+  538  cd youtube/
+  539  ls
+  540  cd social-network/
+  541  ls
+  542  cd src
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd src
+  547  ls
+  548  cd contracts/
+  549  ls
+  550  solcjs --bin --abi SocialNetwork.sol 
+  551  npm install solc
+  552  pwd
+  553  ls
+  554  solcjs
+  555  whci solc
+  556  cd `
+  557  cd ~
+  558  npm unstall solc
+  559  npm uninstall solc
+  560  pwd
+  561  cd wshi
+  562  ls
+  563  cd ethereum/
+  564  ls
+  565  cd pnet
+  566  ls
+  567  cd ethereum_voting_dapp/
+  568  npm install solc
+  569  ls
+  570  ls
+  571  cp ~/repo/github/shiwei/learning/youtube/social-network/src/contracts/SocialNetwork.sol .
+  572  ls
+  573  node_modules/.bin/solcjs -bin --abi SocialNetwork.sol 
+  574  npm uninstall solc
+  575  npm install solc@0.5.0
+  576  node_modules/.bin/solcjs -bin --abi SocialNetwork.sol 
+  577  npm uninstall solc
+  578  npm uninstall solc@0.5.0
+  579  npm install solc@0.5.3
+  580  node_modules/.bin/solcjs -bin --abi SocialNetwork.sol 
+  581  ls
+  582  ls
+  583  ls *.bin
+  584  ls *.abi
+  585  node_modules/.bin/solcjs --bin SocialNetwork.sol 
+  586  ls
+  587  vi SocialNetwork_sol_SocialNetwork.bin
+  588  pwd
+  589  ls
+  590  pwd
+  591  cd ..
+  592  mkdir social_media
+  593  cd social_media/
+  594  cp ../ethereum_voting_dapp/SocialNetwork* .
+  595  ls
+  596  pwd
+  597  ls
+  598  pwd
+  599  cd ..
+  600  ls
+  601  cd node3/
+  602  ls
+  603  cd keystore/
+  604  ls
+  605  vi UTC--2020-02-15T01-53-34.675685000Z--7ea1dcb2dcb7c6d11bb3e9d3a41826aca870ef1b 
+  606  npm install keythereum
+  607  pwd
+  608  ls
+  609  pwd
+  610  pwd
+  611  cd ..
+  612  ls
+  613  geth attach
+  614  geth attach ./geth.ipc
+  615  geth attach ./geth.ipc
+  616  ps -ef | grep geth
+  617  pwd
+  618  cd ..
+  619  ls
+  620  vi pnet.json
+  621  ps -ef | grep geth
+  622  kill -9 64280
+  623  ps -ef | grep geth
+  624  geth --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50 --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcapi eth,net,web3,personal,miner --allow-insecure-unlock console
+  625  pwd
+  626  geth --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50 --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcapi eth,net,web3,personal,miner --allow-insecure-unlock console 2>>eth.log
+  627  tail -f eth.log
+  628  ps -ef | grep geth
+  629  pwd
+  630  ls
+  631  geth --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50 --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcapi eth,net,web3,personal,miner --allow-insecure-unlock console 2>>eth.log
+  632  pwd
+  633  geth --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50 --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcapi eth,net,web3,personal,miner --allow-insecure-unlock console 2>>eth.log
+  634  geth --datadir node3/ init pnet.json
+  635  geth --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50  --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  636  geth --nousb --nodiscover --port 8080 --networkid 1234 --datadir=./node3 --maxpeers=50  --rpc --rpcport 7411 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  637  history
+  638  pwd
+  639  ls
+  640  geth --nousb --port 3012 --networkid 1234 --datadir=./node2 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,we
+  641  geth --nousb --port 3012 --networkid 1234 --datadir=./node2 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,we
+  642  geth --nousb --port 8080 --networkid 7410 --datadir=./node3 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  643  ps -ef | grep geth
+  644  geth --nousb --port 8080 --networkid 7410 --datadir=./node3 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  645  histort
+  646  history
+  647  geth --nousb --port 8080 --networkid 7410 --datadir=./node3 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  648  ps -ef | grep geth
+  649  ps -ef | grep 8080
+  650  geth --nousb --port 8080 --networkid 7410 --datadir=./node3 --maxpeers=5  --rpc --rpcport 8542 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,miner" --allow-insecure-unlock console 2>>eth.log
+  651  pwd
+  652  ls
+  653  ps -ef > tmp
+  654  vi tmp
+  655  netstat -vanp tcp | grep 8080
+  656  ls
+  657  history > node3_history.txt
