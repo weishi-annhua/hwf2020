@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinese Pronunciation Checker</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+  <body>
+    <h1>Chinese Pronunciation Checker</h1>
+    <p>Enter a word and press the button to check pronunciation:</p>
+    <input type="text" id="input-text" />
+    <button id="start-recording">Start Recording</button>
+    <button id="stop-recording" disabled>Stop Recording</button>
+    <p id="result"></p>
+    <script>
+      // Replace with your own Google API key
+      const apiKey = 'AIzaSyAp1oG-jthe4kNMS2-s5ji8iXH_vnPmiRQ'
+
+      const inputText = document.getElementById('input-text')
+      const startRecordingButton = document.getElementById('start-recording')
+      const stopRecordingButton = document.getElementById('stop-recording')
+      const resultParagraph = document.getElementById('result')
+
+      let recognition
+      let isRecording = false
+
+      function speak(text) {
+        responsiveVoice.speak(text, 'Chinese Female')
+        setTimeout(() => {
+          i = 1
+        }, 50)
+      }
+
+      function initSpeechRecognition() {
+        if ('webkitSpeechRecognition' in window) {
+          recognition = new webkitSpeechRecognition()
+          recognition.continuous = true
+          recognition.interimResults = true
+          recognition.lang = 'zh-CN'
+
+          recognition.onstart = function () {
+            isRecording = true
+            stopRecordingButton.disabled = false
+            startRecordingButton.disabled = true
+            resultParagraph.textContent = 'Listening...'
+          }
+
+          recognition.onresult = async function (event) {
+            let interim_transcript = ''
+            let final_transcript = ''
+
+            for (let i = event.resultIndex; i < event.results.length; ++i) {
+              if (event.results[i].isFinal) {
+                final_transcript += event.results[i][0].transcript
+              } else {
+                interim_transcript += event.results[i][0].transcript
+              }
+            }
+
+            if (final_transcript) {
+              resultParagraph.textContent = `You said: ${final_transcript}`
+              const targetText = inputText.value
+              if (final_transcript.trim() === targetText) {
+                resultParagraph.textContent += ' - Pronunciation is correct!'
+                speak(`You said: ${final_transcript}, 发音正确. `)
+              } else {
+                resultParagraph.textContent +=
+                  '- Pronunciation is incorrect. The Correct Pronunciation is: ' +
+                  targetText
+                speak(
+                  `You said: ${final_transcript}, 正确发音是，${targetText} `
+                )
+              }
+            }
+          }
+
+          recognition.onerror = function (event) {
+            console.error(event.error)
+          }
+
+          recognition.onend = function () {
+            isRecording = false
+            stopRecordingButton.disabled = true
+            startRecordingButton.disabled = false
+          }
+        } else {
+          console.error('Speech Recognition API not supported in this browser.')
+        }
+      }
+
+      startRecordingButton.addEventListener('click', () => {
+        if (!isRecording) {
+          recognition.start()
+        }
+      })
+
+      stopRecordingButton.addEventListener('click', () => {
+        if (isRecording) {
+          recognition.stop()
+        }
+      })
+
+      initSpeechRecognition()
+    </script>
+  </body>
+</html>
